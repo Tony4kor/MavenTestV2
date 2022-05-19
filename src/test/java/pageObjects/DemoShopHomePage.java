@@ -30,7 +30,7 @@ public class DemoShopHomePage{
 
 
     public DemoShopHomePage(WebDriver driver1) {
-    	 this.driver = driver1; PageFactory.initElements(driver1, this);
+    	 this.driver = driver1; PageFactory.initElements(driver, this);
     }
     
 	public void launch() {

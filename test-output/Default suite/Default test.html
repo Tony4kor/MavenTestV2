@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/3/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Apr 28 21:54:30 EDT 2022</td>
+<td>Started on:</td><td>Wed May 18 21:35:26 EDT 2022</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (896 ms)</td>
+<tr><td>Total time:</td><td>0 seconds (651 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,19 +75,47 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
+<td title='run_tests.TestRunner.runScenario()'><b>runScenario</b><br>Test class: run_tests.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User log in into DemoWebShop", "Optional[Log in into DemoWebShop]"</td>
+<td><div><pre>java.lang.NullPointerException
+	at pageObjects.DemoShopHomePage.launch(DemoShopHomePage.java:37)
+	at com.demowebshop.step_definitions.LogIn.user_launches_demo_shop_home_page(LogIn.java:20)
+	at ?.User launches DemoShop home page(file:///C:/Users/tulki/eclipse-workspace/MavenTest/src/test/resources/feature_files/DemoWebShopLogIn.feature:6)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1911168986", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1911168986'><pre>java.lang.NullPointerException
+	at pageObjects.DemoShopHomePage.launch(DemoShopHomePage.java:37)
+	at com.demowebshop.step_definitions.LogIn.user_launches_demo_shop_home_page(LogIn.java:20)
+	at ?.User launches DemoShop home page(file:///C:/Users/tulki/eclipse-workspace/MavenTest/src/test/resources/feature_files/DemoWebShopLogIn.feature:6)
+</pre></div></td>
+<td>0</td>
+<td>run_tests.TestRunner@4f2b503c</td></tr>
+<tr>
 <td title='run_tests.TestRunner.runScenario()'><b>runScenario</b><br>Test class: run_tests.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User registers into DemoWebShop", "Optional[Registration into DemoWebShop]"</td>
 <td><div><pre>java.lang.NullPointerException
 	at pageObjects.DemoShopHomePage.launch(DemoShopHomePage.java:37)
 	at com.demowebshop.step_definitions.Registration.user_launches_demo_shop_home_page(Registration.java:26)
 	at ?.User launches DemoShop(file:///C:/Users/tulki/eclipse-workspace/MavenTest/src/test/resources/feature_files/DemoWebShop_Registration.feature:6)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1563634025", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1563634025'><pre>java.lang.NullPointerException
+</pre></div><a href='#' onClick='toggleBox("stack-trace3694603", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace3694603'><pre>java.lang.NullPointerException
 	at pageObjects.DemoShopHomePage.launch(DemoShopHomePage.java:37)
 	at com.demowebshop.step_definitions.Registration.user_launches_demo_shop_home_page(Registration.java:26)
 	at ?.User launches DemoShop(file:///C:/Users/tulki/eclipse-workspace/MavenTest/src/test/resources/feature_files/DemoWebShop_Registration.feature:6)
 </pre></div></td>
 <td>0</td>
-<td>run_tests.TestRunner@209da20d</td></tr>
+<td>run_tests.TestRunner@4f2b503c</td></tr>
+<tr>
+<td title='run_tests.TestRunner.runScenario()'><b>runScenario</b><br>Test class: run_tests.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Log in into DemoWebShop with wrong Login and Pass", "Optional[Log in into DemoWebShop]"</td>
+<td><div><pre>java.lang.NullPointerException
+	at pageObjects.DemoShopHomePage.launch(DemoShopHomePage.java:37)
+	at com.demowebshop.step_definitions.LogIn.user_launches_demo_shop_home_page(LogIn.java:20)
+	at ?.User launches DemoShop home page(file:///C:/Users/tulki/eclipse-workspace/MavenTest/src/test/resources/feature_files/DemoWebShopLogIn.feature:18)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1704214570", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1704214570'><pre>java.lang.NullPointerException
+	at pageObjects.DemoShopHomePage.launch(DemoShopHomePage.java:37)
+	at com.demowebshop.step_definitions.LogIn.user_launches_demo_shop_home_page(LogIn.java:20)
+	at ?.User launches DemoShop home page(file:///C:/Users/tulki/eclipse-workspace/MavenTest/src/test/resources/feature_files/DemoWebShopLogIn.feature:18)
+</pre></div></td>
+<td>0</td>
+<td>run_tests.TestRunner@4f2b503c</td></tr>
 </table><p>
 </body>
 </html>

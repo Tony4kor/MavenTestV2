@@ -9,7 +9,7 @@ Feature: Log in into DemoWebShop
     When User enters <username> log in and pass <password> and clicks log in btn
     Then User should logged in
     Examples:
-      | username               | password    |
+      | username             | password   |
       | "john1234@gmail.com" | "john1234" |
 
 

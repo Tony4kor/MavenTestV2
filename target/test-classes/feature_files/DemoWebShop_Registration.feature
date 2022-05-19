@@ -6,3 +6,4 @@ Feature: Registration into DemoWebShop
     Given User launches DemoShop
     When User clicks on register link
     Then User in registration page
+   

@@ -7,7 +7,7 @@ import io.cucumber.testng.CucumberOptions;
 
 
 @CucumberOptions(
-        features = "src/test/resources/feature_files/DemoWebShop_Registration.feature", monochrome = true, dryRun = false,
+        features = "src/test/resources/feature_files", monochrome = true, dryRun = false,
         glue = "com/demowebshop/step_definitions",
         plugin = { "pretty", "html:target/cucumber-reports.html", "json:target/cucumber.json" })
 

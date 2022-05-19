@@ -1,8 +1,6 @@
 package com.demowebshop.step_definitions;
 
 
-import org.openqa.selenium.WebDriver;
-
 import io.cucumber.java.en.*;
 import pageObjects.DemoShopHomePage;
 import pageObjects.Login;
@@ -19,7 +17,7 @@ public class LogIn extends BaseClass2{
 	public void user_launches_demo_shop_home_page() {
 		homePage = new DemoShopHomePage(driver);
 		login = new Login(driver);
-		driver.get("http://demowebshop.tricentis.com/");
+		homePage.launch();
 	  
 	}
 

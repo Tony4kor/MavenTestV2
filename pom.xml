@@ -85,12 +85,6 @@
 			<version>1.0.6</version>
 			<scope>provided</scope>
 		</dependency>
-		<!-- https://mvnrepository.com/artifact/io.cucumber/gherkin -->
-		<dependency>
-			<groupId>io.cucumber</groupId>
-			<artifactId>gherkin</artifactId>
-			<version>20.0.1</version>
-		</dependency>
 		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-jvm -->
 		<dependency>
 			<groupId>io.cucumber</groupId>

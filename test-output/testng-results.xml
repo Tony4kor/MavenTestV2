@@ -1,27 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="3" passed="0" failed="3" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-04-28T21:54:30 EDT" name="Default suite" finished-at="2022-04-28T21:54:31 EDT" duration-ms="896">
+  <suite started-at="2022-05-18T21:35:26 EDT" name="Default suite" finished-at="2022-05-18T21:35:26 EDT" duration-ms="651">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:run_tests.TestRunner@209da20d]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:run_tests.TestRunner@4f2b503c]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2022-04-28T21:54:30 EDT" name="Default test" finished-at="2022-04-28T21:54:31 EDT" duration-ms="896">
+    <test started-at="2022-05-18T21:35:26 EDT" name="Default test" finished-at="2022-05-18T21:35:26 EDT" duration-ms="651">
       <class name="run_tests.TestRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:run_tests.TestRunner@209da20d]" started-at="2022-04-28T21:54:30 EDT" name="setUpClass" finished-at="2022-04-28T21:54:31 EDT" duration-ms="599" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:run_tests.TestRunner@4f2b503c]" started-at="2022-05-18T21:35:26 EDT" name="setUpClass" finished-at="2022-05-18T21:35:26 EDT" duration-ms="413" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@32fdec40]]>
+                <![CDATA[org.testng.TestRunner@7d151a]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:run_tests.TestRunner@209da20d]" started-at="2022-04-28T21:54:31 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-04-28T21:54:31 EDT" duration-ms="135" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:run_tests.TestRunner@4f2b503c]" started-at="2022-05-18T21:35:26 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-05-18T21:35:26 EDT" duration-ms="81" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User log in into DemoWebShop"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Log in into DemoWebShop]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at pageObjects.DemoShopHomePage.launch(DemoShopHomePage.java:37)
+at com.demowebshop.step_definitions.LogIn.user_launches_demo_shop_home_page(LogIn.java:20)
+at ✽.User launches DemoShop home page(file:///C:/Users/tulki/eclipse-workspace/MavenTest/src/test/resources/feature_files/DemoWebShopLogIn.feature:6)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:run_tests.TestRunner@4f2b503c]" started-at="2022-05-18T21:35:26 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-05-18T21:35:26 EDT" duration-ms="28" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Log in into DemoWebShop with wrong Login and Pass"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Log in into DemoWebShop]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at pageObjects.DemoShopHomePage.launch(DemoShopHomePage.java:37)
+at com.demowebshop.step_definitions.LogIn.user_launches_demo_shop_home_page(LogIn.java:20)
+at ✽.User launches DemoShop home page(file:///C:/Users/tulki/eclipse-workspace/MavenTest/src/test/resources/feature_files/DemoWebShopLogIn.feature:18)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:run_tests.TestRunner@4f2b503c]" started-at="2022-05-18T21:35:26 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-05-18T21:35:26 EDT" duration-ms="17" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -46,7 +96,7 @@ at ✽.User launches DemoShop(file:///C:/Users/tulki/eclipse-workspace/MavenTest
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:run_tests.TestRunner@209da20d]" started-at="2022-04-28T21:54:31 EDT" name="tearDownClass" finished-at="2022-04-28T21:54:31 EDT" duration-ms="121" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:run_tests.TestRunner@4f2b503c]" started-at="2022-05-18T21:35:26 EDT" name="tearDownClass" finished-at="2022-05-18T21:35:26 EDT" duration-ms="86" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
